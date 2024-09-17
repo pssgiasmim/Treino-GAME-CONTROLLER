@@ -30,7 +30,7 @@ public class Block : MonoBehaviour
     //Método para trocar a cor do bloco aleatóriamente
     private void ChangeColor()
     {
-        s = new Color(1,1,1);//SpriteRenderer.color = new Color(repetir o random. range)
+        spriteRenderer.color = new Color(Random.Range(0,1f), Random.Range(0,1f), Random.Range(0,1f));//SpriteRenderer.color = new Color(repetir o random. range)
     }
 
 }
