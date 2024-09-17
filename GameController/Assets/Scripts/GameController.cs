@@ -43,12 +43,12 @@ public class GameController : MonoBehaviour
                 //Armazena o bloco na matriz
                 grid[i , j] = bloco;
 
-
             }
         }
     }
 
    
+
 
 
 }
