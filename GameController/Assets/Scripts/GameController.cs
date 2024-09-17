@@ -29,16 +29,18 @@ public class GameController : MonoBehaviour
     //Método para criar a matriz
     private void CreateGrid()
     {
-        //loop que cria a matriz. Wsse mesmo loop cálcula a posição de cada boloco e armazena
-        for (int i = 0; i < grid.Length; i++)
+        //loop que cria a matriz. Esse mesmo loop cálcula a posição de cada boloco e armazena
+        for (int i = 0; i < linha; i++)
         {
-            for (int j = 0; j < grid.Length; j++)
+            for (int j = 0; j < coluna; j++)
             {
                 //variável que armazena as posições dos blocos
                 Vector2 posicao = new Vector2( i, j); //a posição em linha e coluna, é armazenado na variável posicao
 
-                GameObject bloco=Instantiate(blockPrefab, posicao, Quaternion.identity);
+                //Instancia o bloco na posição calculada
+                GameObject bloco =Instantiate(blockPrefab, posicao, Quaternion.identity);
 
+                //Armazena o bloco na matriz
                 grid[i , j] = bloco;
 
 
